@@ -37,6 +37,10 @@ app.get('/home', (req, res) => {
     res.sendFile(__dirname + '/fa.html')
 });
 
+app.get('/signup', (req, res) => {
+    res.sendFile(__dirname + '/signup.html')
+});
+
 app.get('/:user/:pass', (req, res) => {
     dataCamp.collection("users").find({
         username: req.params.user,
