@@ -106,13 +106,13 @@
 					var resp = JSON.parse(xhttp.responseText);
 					if (resp.status == 200) {
 						localStorage['currentLoggedInUser'] = user;
-            window.location.replace(`https://iotine.zapto.org/tshirt/home`)
+                        window.location.replace(`https://iotine.zapto.org/tshirt/home`)
 					} else {
 						alert("There was a problem logging you in!")
 					}
 				}
 			};
-			xhttp.open("GET", "https://iotine.zapto.org/tshirt/s" + user + "/" + pass, true);
+			xhttp.open("GET", "https://iotine.zapto.org/tshirt/s/" + user + "/" + pass, true);
 			xhttp.send();
 		}
 </script>
