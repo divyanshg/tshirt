@@ -30,7 +30,7 @@
         <a class="mr-5 hover:text-white">Bestseller</a>
         <a class="mr-5 hover:text-white">Contact Us</a>
       </nav>
-      <a href="/tshirt/signup" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Sign up
+      <a href="/tshirt/signup" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Sign in
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
@@ -44,10 +44,10 @@
             <p class="leading-relaxed mt-4">Litreally, have you ever thought about Custom T-shirts? Get the Best Prices and quality T-shirts here.</p>
           </div>
           <div class="lg:w-2/6 md:w-1/2 bg-gray-800 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-            <h2 class="text-white text-lg font-medium title-font mb-5">Sign in</h2>
+            <h2 class="text-white text-lg font-medium title-font mb-5">Sign up</h2>
             <input class="bg-gray-900 rounded border text-white border-gray-900 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Username" id="user" type="text">
             <input class="bg-gray-900 rounded border text-white border-gray-900 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Password" id="pass" type="password">
-            <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="signIN()">Sign in</button>
+            <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="signUP()">Sign up</button>
             <p class="text-xs text-gray-600 mt-3">Hop in our website to Know More. @yuvraj192 @divyanshg809 </p>
           </div>
         </div>
@@ -112,7 +112,7 @@
 					}
 				}
 			};
-			xhttp.open("GET", "https://iotine.zapto.org/tshirt/" + user + "/" + pass, true);
+			xhttp.open("GET", "https://iotine.zapto.org/tshirt/s" + user + "/" + pass, true);
 			xhttp.send();
 		}
 </script>
