@@ -18,3 +18,7 @@ var server = http.createServer(options, app).listen(30021, function () {
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/login.html')
 });
+
+app.get('/:user/:pass', (req, res) => {
+    res.sendStatus(200)
+});
