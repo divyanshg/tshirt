@@ -81,7 +81,8 @@
 					var resp = JSON.parse(xhttp.responseText);
 					if (resp.status == 200) {
 						localStorage['currentLoggedInUser'] = user;
-						window.location.replace(`https://iotine.zapto.org/console`)
+            //window.location.replace(`https://iotine.zapto.org/console`)
+            alert("HII")
 					} else {
 						alert("There was a problem logging you in!")
 					}
