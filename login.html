@@ -65,6 +65,30 @@
     
 </body>
 <script>
-  var login;
+  function signIN() {
+			var user = document.querySelector("#user").value,
+				pass = document.querySelector("#pass").value
+
+			if (user == '' || pass == '') {
+				alert("Please provide your credentials!")
+				return;
+			}
+
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					// Typical action to be performed when the document is ready:
+					var resp = JSON.parse(xhttp.responseText);
+					if (resp.status == 200) {
+						localStorage['currentLoggedInUser'] = user;
+						window.location.replace(`https://iotine.zapto.org/console`)
+					} else {
+						alert("There was a problem logging you in!")
+					}
+				}
+			};
+			xhttp.open("GET", "https://iotine.zapto.org/login/" + user + "/" + pass, true);
+			xhttp.send();
+		}
 </script>
 </html>
