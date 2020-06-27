@@ -20,5 +20,5 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:user/:pass', (req, res) => {
-    res.sendStatus(200)
+    res.json({status:200})
 });
