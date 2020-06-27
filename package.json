@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/divyanshg/tshirt/issues"
   },
-  "homepage": "https://github.com/divyanshg/tshirt#readme"
+  "homepage": "https://github.com/divyanshg/tshirt#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
