@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+      if (localStorage['currentLoggedInUser'] == "" || !localStorage["currentLoggedInUser"]) {
+              window.location.replace("https://iotine.zapto.org/login")
+      }
+    </script>
 </head>
 <body>
     <section class="text-gray-500 bg-gray-900 body-font">
