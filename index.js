@@ -67,7 +67,7 @@ app.get('/s/:user/:pass', (req, res) => {
     dataCamp.collection("users").insertOne({
         username: req.params.user,
         password: req.params.pass
-    }, (err, res) => {
+    }, (err, resp) => {
         if (err) {res.json({status: 404 });res.end();return;}
         res.json({status: 200})
         res.end()
